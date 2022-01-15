@@ -13,10 +13,10 @@ you can find axis server on `localost:<port>/axis` :
 
 ### to configure your webService :
 
-1 - Create a Service annotated with `@Service` implementing a service interface with your own methods and signatures.
-2 - Implements the service interface in `AxisWbeService`, then get the bean of your Service Impl, or just simply use `@Autowired`, and Override the methods.
+- Create a Service annotated with `@Service` implementing a service interface with your own methods and signatures.
+- Implements the service interface in `AxisWbeService`, then get the bean of your Service Impl, or just simply use `@Autowired`, and Override the methods.
 This is the class that is registered in server-config.wsdd, and it's designed to separate the RPC aspects of the SOAP API from your spring based implementation.
-3 - Modify the `server-config.wsdd` in `src/main/webapp/WEB-INF` (change the service name, namespaces and the operations)
+- Modify the `server-config.wsdd` in `src/main/webapp/WEB-INF` (change the service name, namespaces and the operations)
 
 This is an example :
 
